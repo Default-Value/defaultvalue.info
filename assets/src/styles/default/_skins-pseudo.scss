@@ -1,0 +1,17 @@
+/*
+    SKINS:PSEUDO
+*/
+
+ @each $id, $color in $color-palette {
+   .hover-#{$id}:hover,
+   .hover-#{$id}:focus { color: $color; }
+ }
+ .hover-inherit:hover,
+ .hover-inherit:focus { color: inherit; }
+
+ @each $id, $color in $color-palette {
+   .hover-bg-#{$id}:hover,
+   .hover-bg-#{$id}:focus { background-color: $color; }
+ }
+ .hover-bg-inherit:hover,
+ .hover-bg-inherit:focus { background-color: inherit; }

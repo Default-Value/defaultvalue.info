@@ -1,0 +1,59 @@
+/*
+    BORDERS
+*/
+
+.ba {
+  border-style: solid;
+  border-width: $border-width;
+}
+.bt {
+  border-top-style: solid;
+  border-top-width: $border-width;
+}
+.br {
+  border-right-style: solid;
+  border-right-width: $border-width;
+}
+.bb {
+  border-bottom-style: solid;
+  border-bottom-width: $border-width;
+}
+.bl {
+  border-left-style: solid;
+  border-left-width: $border-width;
+}
+.bn {
+  border-style: none;
+  border-width: 0;
+}
+
+@if (variable-exists(breakpoints)) {
+  @each $bp-name, $bp-value in $breakpoints {
+    @media (min-width: $bp-value) {
+      .ba-#{$bp-name} {
+        border-style: solid;
+        border-width: $border-width;
+      }
+      .bt-#{$bp-name} {
+        border-top-style: solid;
+        border-top-width: $border-width;
+      }
+      .br-#{$bp-name} {
+        border-right-style: solid;
+        border-right-width: $border-width;
+      }
+      .bb-#{$bp-name} {
+        border-bottom-style: solid;
+        border-bottom-width: $border-width;
+      }
+      .bl-#{$bp-name} {
+        border-left-style: solid;
+        border-left-width: $border-width;
+      }
+      .bn-#{$bp-name} {
+        border-style: none;
+        border-width: 0;
+      }
+    }
+  }
+}

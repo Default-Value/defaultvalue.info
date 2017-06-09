@@ -1,0 +1,33 @@
+/*
+    FONT WEIGHT
+*/
+
+.normal { font-weight: normal; }
+.b { font-weight: bold; }
+.fw1 { font-weight: 100; }
+.fw2 { font-weight: 200; }
+.fw3 { font-weight: 300; }
+.fw4 { font-weight: 400; }
+.fw5 { font-weight: 500; }
+.fw6 { font-weight: 600; }
+.fw7 { font-weight: 700; }
+.fw8 { font-weight: 800; }
+.fw9 { font-weight: 900; }
+
+@if (variable-exists(breakpoints)) {
+  @each $bp-name, $bp-value in $breakpoints {
+    @media (min-width: $bp-value) {
+      .normal-#{$bp-name} { font-weight: normal; }
+      .b-#{$bp-name} { font-weight: bold; }
+      .fw1-#{$bp-name} { font-weight: 100; }
+      .fw2-#{$bp-name} { font-weight: 200; }
+      .fw3-#{$bp-name} { font-weight: 300; }
+      .fw4-#{$bp-name} { font-weight: 400; }
+      .fw5-#{$bp-name} { font-weight: 500; }
+      .fw6-#{$bp-name} { font-weight: 600; }
+      .fw7-#{$bp-name} { font-weight: 700; }
+      .fw8-#{$bp-name} { font-weight: 800; }
+      .fw9-#{$bp-name} { font-weight: 900; }
+    }
+  }
+}

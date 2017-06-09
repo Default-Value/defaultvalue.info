@@ -1,0 +1,19 @@
+/*
+    VERTICAL ALIGN
+*/
+
+.v-base { vertical-align: baseline; }
+.v-mid { vertical-align: middle; }
+.v-top { vertical-align: top; }
+.v-btm { vertical-align: bottom; }
+
+@if (variable-exists(breakpoints)) {
+  @each $bp-name, $bp-value in $breakpoints {
+    @media (min-width: $bp-value) {
+      .v-base-#{$bp-name} { vertical-align: baseline; }
+      .v-mid-#{$bp-name} { vertical-align: middle; }
+      .v-top-#{$bp-name} { vertical-align: top; }
+      .v-btm-#{$bp-name} { vertical-align: bottom; }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+/*
+    BACKGROUND POSITION
+*/
+
+.bg-center {
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.bg-top {
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+.bg-right {
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+.bg-bottom {
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+.bg-left {
+  background-repeat: no-repeat;
+  background-position: center left;
+}
+
+@if (variable-exists(breakpoints)) {
+  @each $bp-name, $bp-value in $breakpoints {
+    @media (min-width: $bp-value) {
+      .bg-center-#{$bp-name} {
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+      .bg-top-#{$bp-name} {
+        background-repeat: no-repeat;
+        background-position: top center;
+      }
+      .bg-right-#{$bp-name} {
+        background-repeat: no-repeat;
+        background-position: center right;
+      }
+      .bg-bottom-#{$bp-name} {
+        background-repeat: no-repeat;
+        background-position: bottom center;
+      }
+      .bg-left-#{$bp-name} {
+        background-repeat: no-repeat;
+        background-position: center left;
+      }
+    }
+  }
+}

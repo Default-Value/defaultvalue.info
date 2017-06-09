@@ -1,0 +1,17 @@
+/*
+    TEXT DECORATION
+*/
+
+.strike { text-decoration: line-through; }
+.underline { text-decoration: underline; }
+.no-underline { text-decoration: none; }
+
+@if (variable-exists(breakpoints)) {
+  @each $bp-name, $bp-value in $breakpoints {
+    @media (min-width: $bp-value) {
+      .strike-#{$bp-name} { text-decoration: line-through; }
+      .underline-#{$bp-name} { text-decoration: underline; }
+      .no-underline-#{$bp-name} { text-decoration: none; }
+    }
+  }
+}

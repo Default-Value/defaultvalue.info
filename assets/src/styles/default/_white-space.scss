@@ -1,0 +1,18 @@
+/*
+    WHITE SPACE
+*/
+
+
+.ws-normal { white-space: normal; }
+.nowrap { white-space: nowrap; }
+.pre { white-space: pre; }
+
+@if (variable-exists(breakpoints)) {
+  @each $bp-name, $bp-value in $breakpoints {
+    @media (min-width: $bp-value) {
+      .ws-normal-#{$bp-name} { white-space: normal; }
+      .nowrap-#{$bp-name} { white-space: nowrap; }
+      .pre-#{$bp-name} { white-space: pre; }
+    }
+  }
+}

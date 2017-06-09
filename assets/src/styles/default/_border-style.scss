@@ -1,0 +1,19 @@
+/*
+    BORDER STYLES
+*/
+
+.b--dotted { border-style: dotted; }
+.b--dashed { border-style: dashed; }
+.b--solid { border-style: solid; }
+.b--none { border-style: none; }
+
+@if (variable-exists(breakpoints)) {
+  @each $bp-name, $bp-value in $breakpoints {
+    @media (min-width: $bp-value) {
+      .b--dotted-#{$bp-name} { border-style: dotted; }
+      .b--dashed-#{$bp-name} { border-style: dashed; }
+      .b--solid-#{$bp-name} { border-style: solid; }
+      .b--none-#{$bp-name} { border-style: none; }
+    }
+  }
+}

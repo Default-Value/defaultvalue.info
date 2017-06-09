@@ -1,0 +1,28 @@
+/*
+   CLEARFIX
+*/
+
+.cf:before,
+.cf:after { content: " "; display: table; }
+.cf:after { clear: both; }
+.cf { *zoom: 1; }
+
+.cl { clear: left; }
+.cr { clear: right; }
+.cb { clear: both; }
+.cn { clear: none; }
+
+@if (variable-exists(breakpoints)) {
+  @each $bp-name, $bp-value in $breakpoints {
+    @media (min-width: $bp-value) {
+      .cf-#{$bp-name}:before,
+      .cf-#{$bp-name}:after { content: " "; display: table; }
+      .cf-#{$bp-name}:after { clear: both; }
+      .cf-#{$bp-name} { *zoom: 1; }
+      .cl-#{$bp-name} { clear: left; }
+      .cr-#{$bp-name} { clear: right; }
+      .cb-#{$bp-name} { clear: both; }
+      .cn-#{$bp-name} { clear: none; }
+    }
+  }
+}

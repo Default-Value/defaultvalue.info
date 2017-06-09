@@ -1,0 +1,44 @@
+---
+##### seo #####
+title: DV Jekyll boilerplate
+description:
+url:
+twitter:
+  username: _defaultvalue
+logo:
+social:
+  name: Default Value
+  links:
+    - https://twitter.com/_defaultvalue
+    - https://www.facebook.com/_defaultvalue
+    - https://www.linkedin.com/company-beta/11151394/
+    - https://github.com/default-value
+webmaster_verifications:
+  google: 1234
+  bing: 1234
+  alexa: 1234
+
+##### etc #####
+ga_analytics: UA-96203809-1
+imgix:
+  source: imgix.net
+timezone: America/New_York
+
+##### defaults #####
+
+##### jekyll #####
+permalink: pretty
+exclude:
+- "*.config"
+- assets/src
+- ".gitignore"
+- Gulpfile.js
+- node_modules
+- package.json
+- README*
+- tools/
+- webpack.config.js
+gems:
+- jekyll-seo-tag
+- jekyll-sitemap
+- jekyll/imgix

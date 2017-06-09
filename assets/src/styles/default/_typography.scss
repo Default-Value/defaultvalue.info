@@ -1,0 +1,44 @@
+/*
+    TYPOGRAPHY
+*/
+
+.measure-narrow { max-width: $measure-1; }
+.measure { max-width: $measure-2; }
+.measure-wide { max-width: $measure-3; }
+.measure-extra-wide { max-width: $measure-4; }
+
+.indent {
+  text-indent: 1em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.small-caps { font-variant: small-caps; }
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@if (variable-exists(breakpoints)) {
+  @each $bp-name, $bp-value in $breakpoints {
+    @media (min-width: $bp-value) {
+      .measure-narrow-#{$bp-name} { max-width: $measure-1; }
+      .measure-#{$bp-name} { max-width: $measure-2; }
+      .measure-wide-#{$bp-name} { max-width: $measure-3; }
+      .measure-extra-wide-#{$bp-name} { max-width: $measure-4; }
+      .indent-#{$bp-name} {
+        text-indent: 1em;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      .small-caps-#{$bp-name} { font-variant: small-caps; }
+      .truncate-#{$bp-name} {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+/*
+    POSITIONING
+*/
+
+.static { position: static; }
+.relative { position: relative; }
+.absolute { position: absolute; }
+.fixed { position: fixed; }
+
+@if (variable-exists(breakpoints)) {
+  @each $bp-name, $bp-value in $breakpoints {
+    @media (min-width: $bp-value) {
+      .static-#{$bp-name} { position: static; }
+      .relative-#{$bp-name} { position: relative; }
+      .absolute-#{$bp-name} { position: absolute; }
+      .fixed-#{$bp-name} { position: fixed; }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+/*
+    WORD BREAK
+*/
+
+.word-normal { word-break: normal; }
+.word-wrap { word-break: break-all; }
+.word-nowrap { word-break: keep-all; }
+
+@if (variable-exists(breakpoints)) {
+  @each $bp-name, $bp-value in $breakpoints {
+    @media (min-width: $bp-value) {
+      .word-normal-#{$bp-name} { word-break: normal; }
+      .word-wrap-#{$bp-name} { word-break: break-all; }
+      .word-nowrap-#{$bp-name} { word-break: keep-all; }
+    }
+  }
+}

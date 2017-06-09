@@ -1,0 +1,17 @@
+/*
+    TEXT ALIGN
+*/
+
+.tl { text-align: left; }
+.tr { text-align: right; }
+.tc { text-align: center; }
+
+@if (variable-exists(breakpoints)) {
+  @each $bp-name, $bp-value in $breakpoints {
+    @media (min-width: $bp-value) {
+      .tl-#{$bp-name} { text-align: left; }
+      .tr-#{$bp-name} { text-align: right; }
+      .tc-#{$bp-name} { text-align: center; }
+    }
+  }
+}

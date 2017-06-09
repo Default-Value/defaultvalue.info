@@ -1,0 +1,15 @@
+/*
+    FONT STYLE
+*/
+
+.i { font-style: italic; }
+.fs-normal { font-style: normal; }
+
+@if (variable-exists(breakpoints)) {
+  @each $bp-name, $bp-value in $breakpoints {
+    @media (min-width: $bp-value) {
+      .i-#{$bp-name} { font-style: italic; }
+      .fs-normal-#{$bp-name} { font-style: normal; }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+/*
+    DISPLAY
+*/
+
+.dn { display: none; }
+.di { display: inline; }
+.db { display: block; }
+.dib { display: inline-block; }
+.dit { display: inline-table; }
+.dt { display: table; }
+.dtc { display: table-cell; }
+.dt-row { display: table-row; }
+.dt-row-group { display: table-row-group; }
+.dt-column { display: table-column; }
+.dt-column-group { display: table-column-group; }
+
+.dt--fixed {
+  table-layout: fixed;
+  width: 100%;
+}
+
+@if (variable-exists(breakpoints)) {
+  @each $bp-name, $bp-value in $breakpoints {
+    @media (min-width: $bp-value) {
+      .dn-#{$bp-name} { display: none; }
+      .di-#{$bp-name} { display: inline; }
+      .db-#{$bp-name} { display: block; }
+      .dib-#{$bp-name} { display: inline-block; }
+      .dit-#{$bp-name} { display: inline-table; }
+      .dt-#{$bp-name} { display: table; }
+      .dtc-#{$bp-name} { display: table-cell; }
+      .dt-row-#{$bp-name} { display: table-row; }
+      .dt-row-group-#{$bp-name} { display: table-row-group; }
+      .dt-column-#{$bp-name} { display: table-column; }
+      .dt-column-group-#{$bp-name} { display: table-column-group; }
+      .dt--fixed-#{$bp-name} {
+        table-layout: fixed;
+        width: 100%;
+      }
+    }
+  }
+}

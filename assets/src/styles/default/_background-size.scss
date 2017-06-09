@@ -1,0 +1,15 @@
+/*
+    BACKGROUND SIZE
+*/
+
+.cover { background-size: cover!important; }
+.contain { background-size: contain!important; }
+
+@if (variable-exists(breakpoints)) {
+  @each $bp-name, $bp-value in $breakpoints {
+    @media (min-width: $bp-value) {
+      .cover-#{$bp-name} { background-size: cover!important; }
+      .contain-#{$bp-name} { background-size: contain!important; }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+/*
+    OVERFLOW
+*/
+
+.overflow-visible { overflow: visible; }
+.overflow-hidden { overflow: hidden; }
+.overflow-scroll { overflow: scroll; }
+.overflow-auto { overflow: auto; }
+
+.overflow-x-visible { overflow-x: visible; }
+.overflow-x-hidden { overflow-x: hidden; }
+.overflow-x-scroll { overflow-x: scroll; }
+.overflow-x-auto { overflow-x: auto; }
+
+.overflow-y-visible { overflow-y: visible; }
+.overflow-y-hidden { overflow-y: hidden; }
+.overflow-y-scroll { overflow-y: scroll; }
+.overflow-y-auto { overflow-y: auto; }
+
+@if (variable-exists(breakpoints)) {
+  @each $bp-name, $bp-value in $breakpoints {
+    @media (min-width: $bp-value) {
+      .overflow-visible-#{$bp-name} { overflow: visible; }
+      .overflow-hidden-#{$bp-name} { overflow: hidden; }
+      .overflow-scroll-#{$bp-name} { overflow: scroll; }
+      .overflow-auto-#{$bp-name} { overflow: auto; }
+      .overflow-x-visible-#{$bp-name} { overflow-x: visible; }
+      .overflow-x-hidden-#{$bp-name} { overflow-x: hidden; }
+      .overflow-x-scroll-#{$bp-name} { overflow-x: scroll; }
+      .overflow-x-auto-#{$bp-name} { overflow-x: auto; }
+      .overflow-y-visible-#{$bp-name} { overflow-y: visible; }
+      .overflow-y-hidden-#{$bp-name} { overflow-y: hidden; }
+      .overflow-y-scroll-#{$bp-name} { overflow-y: scroll; }
+      .overflow-y-auto-#{$bp-name} { overflow-y: auto; }
+    }
+  }
+}

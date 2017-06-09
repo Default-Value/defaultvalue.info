@@ -1,0 +1,19 @@
+/*
+    UTILITIES
+*/
+
+.center {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@if (variable-exists(breakpoints)) {
+  @each $bp-name, $bp-value in $breakpoints {
+    @media (min-width: $bp-value) {
+      .center-#{$bp-name} {
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
+  }
+}

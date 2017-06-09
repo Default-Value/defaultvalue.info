@@ -1,0 +1,60 @@
+// Border
+$border-width: 2px;
+$border-radius: 4px;
+
+// Breakpoints
+$breakpoints: (
+  xs: 32em,
+  sm: 40em,
+  md: 52em,
+  lg: 64em
+);
+
+// Loop Counts
+$spacing-count: 24; //Generates margin and padding classes 0.5rem increments
+$layout-count: 48; //Generates height/width classes in 0.5rem increments
+
+// Type Scale
+$h1: 2rem;    // 32px
+$h2: 1.5rem;   // 24px
+$h3: 1.25rem;  // 20px
+$h4: 1rem;      // 16px
+$h5: 0.875rem;  // 14px
+$h6: 0.75rem;   // 12px
+
+$line-height-1: 1;
+$line-height-2: 1.25;
+$line-height-3: 1.5;
+$line-height-4: 2;
+
+$measure-1: 20em;
+$measure-2: 30em;
+$measure-3: 40em;
+$measure-4: 50em;
+
+// Color Definitions
+$white: #FFFFFF;
+$black: #000000;
+$light-grey: #D3D3D3;
+$dark-grey: #A9A9A9;
+$dv-green: #219653;
+$brand: #006FFF;
+$brand-high: #1B7EFF;
+$brand-low: #0069F2;
+$success: #26D58F;
+$success-high: #28E398;
+$success-low: #24C987;
+
+// Color Palette
+$color-palette: (
+  primary: $black,
+  secondary: $dv-green,
+  tertiary: $light-grey,
+  placeholder: $dark-grey,
+  brand: $brand,
+  brand-high: $brand-high,
+  brand-low: $brand-low,
+  success: $success,
+  success-high: $success-high,
+  success-low: $success-low
+);

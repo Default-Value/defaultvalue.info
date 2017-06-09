@@ -1,0 +1,21 @@
+/*
+    BORDER COLORS
+*/
+
+.b--transparent { border-color: transparent; }
+.b--inherit { border-color: inherit; }
+@each $id, $color in $color-palette {
+  .b--#{$id} { border-color: $color; }
+}
+
+@if (variable-exists(breakpoints)) {
+  @each $bp-name, $bp-value in $breakpoints {
+    @media (min-width: $bp-value) {
+      .b--transparent-#{$bp-name} { border-color: transparent; }
+      .b--inherit-#{$bp-name} { border-color: inherit; }
+      @each $id, $color in $color-palette {
+        .b--#{$id}-#{$bp-name} { border-color: $color; }
+      }
+    }
+  }
+}

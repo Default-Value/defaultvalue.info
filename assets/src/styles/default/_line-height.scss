@@ -1,0 +1,19 @@
+/*
+    LINE HEIGHT / LEADING
+*/
+
+.lh-1 { line-height: $line-height-1; }
+.lh-2 { line-height: $line-height-2; }
+.lh-3 { line-height: $line-height-3; }
+.lh-4 { line-height: $line-height-4; }
+
+@if (variable-exists(breakpoints)) {
+  @each $bp-name, $bp-value in $breakpoints {
+    @media (min-width: $bp-value) {
+      .lh-1-#{$bp-name} { line-height: $line-height-1; }
+      .lh-2-#{$bp-name} { line-height: $line-height-2; }
+      .lh-3-#{$bp-name} { line-height: $line-height-3; }
+      .lh-4-#{$bp-name} { line-height: $line-height-4; }
+    }
+  }
+}

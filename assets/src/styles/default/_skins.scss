@@ -1,0 +1,14 @@
+/*
+    SKINS
+*/
+
+@each $id, $color in $color-palette {
+  .#{$id} { color: $color; }
+}
+.color-inherit { background-color: inherit; }
+
+
+@each $id, $color in $color-palette {
+  .bg-#{$id} { background-color: $color; }
+}
+.bg-inherit { background-color: inherit; }

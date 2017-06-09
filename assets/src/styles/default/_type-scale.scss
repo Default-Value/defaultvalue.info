@@ -1,0 +1,23 @@
+/*
+   TYPE SCALE
+*/
+
+.f1 { font-size: $h1; }
+.f2 { font-size: $h2; }
+.f3 { font-size: $h3; }
+.f4 { font-size: $h4; }
+.f5 { font-size: $h5; }
+.f6 { font-size: $h6; }
+
+@if (variable-exists(breakpoints)) {
+  @each $bp-name, $bp-value in $breakpoints {
+    @media (min-width: $bp-value) {
+      .f1-#{$bp-name} { font-size: $h1; }
+      .f2-#{$bp-name} { font-size: $h2; }
+      .f3-#{$bp-name} { font-size: $h3; }
+      .f4-#{$bp-name} { font-size: $h4; }
+      .f5-#{$bp-name} { font-size: $h5; }
+      .f6-#{$bp-name} { font-size: $h6; }
+    }
+  }
+}

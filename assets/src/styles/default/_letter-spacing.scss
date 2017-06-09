@@ -1,0 +1,17 @@
+/*
+    LETTER SPACING
+*/
+
+.tracked { letter-spacing:  .1em; }
+.tracked-tight { letter-spacing: -.05em; }
+.tracked-mega { letter-spacing:  .25em; }
+
+@if (variable-exists(breakpoints)) {
+  @each $bp-name, $bp-value in $breakpoints {
+    @media (min-width: $bp-value) {
+      .tracked-#{$bp-name} { letter-spacing:  .1em; }
+      .tracked-tight-#{$bp-name} { letter-spacing: -.05em; }
+      .tracked-mega-#{$bp-name} { letter-spacing:  .25em; }
+    }
+  }
+}
