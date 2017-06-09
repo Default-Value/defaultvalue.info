@@ -35,26 +35,17 @@ $measure-4: 50em;
 // Color Definitions
 $white: #FFFFFF;
 $black: #000000;
-$light-grey: #D3D3D3;
-$dark-grey: #A9A9A9;
-$dv-green: #219653;
-$brand: #006FFF;
-$brand-high: #1B7EFF;
-$brand-low: #0069F2;
-$success: #26D58F;
-$success-high: #28E398;
-$success-low: #24C987;
+$light-grey: #F1F1F1;
+$brand: #009E34;
+$brand-low: #007327;
+$brand-high: #00CA43;
 
 // Color Palette
 $color-palette: (
-  primary: $black,
-  secondary: $dv-green,
-  tertiary: $light-grey,
-  placeholder: $dark-grey,
+  white: $white,
+  black: $black,
+  light-grey: $light-grey,
   brand: $brand,
-  brand-high: $brand-high,
   brand-low: $brand-low,
-  success: $success,
-  success-high: $success-high,
-  success-low: $success-low
+  brand-high: $brand-high,
 );
