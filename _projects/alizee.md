@@ -1,6 +1,6 @@
 ---
 title: A portfolio website for freelance designer & art director.
-position: 10
+position: 4
 publish: true
 image: /assets/images/defaultvalue-dot-info-alizee1.png
 layout: project
@@ -17,7 +17,7 @@ tags:
     - Responsive Development
 ---
 
-<img src="/assets/images/defaultvalue-dot-info-alizee1.png" alt="alt text" class="shadow mb8" />
+{% assign image = "defaultvalue-dot-info-alizee1.png" %} {% assign shadow = true %} {% include srcset-imgix.html %}
 
 Alizee Freudenthal was looking to refresh her website as she transitioned to freelancing full time. We helped Alizee transform flat designs into a responsive and dynamic portfolio site with smart transitions. Siteleaf is used as a content management system to allow painless updating.
 {: .measure-wide .mb8 }

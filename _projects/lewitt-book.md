@@ -1,6 +1,6 @@
 ---
 title: A book-as-exhibition of Sol LeWitt’s work.
-position: 6
+position: 5
 publish: true
 image: /assets/images/defaultvalue-dot-info-lewitt2.jpg
 isBrowser: false
@@ -11,7 +11,7 @@ tags:
     - Research
 ---
 
-<img src="/assets/images/defaultvalue-dot-info-lewitt1.gif" alt="alt text" class="mb8" />
+<img src="/assets/images/defaultvalue-dot-info-lewitt1.gif" class="mb8" />
 
 Traditionally, an exhibition catalogue plays the role of indexing the event, providing additional context, information, writing, etc. Instead, we wanted to explore what it would mean for an exhibition catalogue to only be self-referential. It is often said that when art is reproduced in print or on screen, it cannot replicate the same experiential qualities seen in person. we want to consider what new affordances are available when art is reproduced in a printed exhibition.
 {: .measure-wide }
@@ -22,8 +22,8 @@ We wanted to provide a structure to the book that wasn’t linear or chronologic
 The left half of the book includes essays on LeWitt and his work, writing by LeWitt, interviews, and other fragments and scans of writing. The right half of the book includes images of LeWitt’s work. Footnotes are provides across the halves of the book when specific works or writings are referenced.
 {: .measure-wide .mb8 }
 
-<img src="/assets/images/defaultvalue-dot-info-lewitt2.jpg" alt="alt text" class="mb8" />
+{% assign image = "defaultvalue-dot-info-lewitt2.jpg" %} {% include srcset-imgix.html %}
 
-<img src="/assets/images/defaultvalue-dot-info-lewitt3.jpg" alt="alt text" class="mb8" />
+{% assign image = "defaultvalue-dot-info-lewitt3.jpg" %} {% include srcset-imgix.html %}
 
-<img src="/assets/images/defaultvalue-dot-info-lewitt4.jpg" alt="alt text" class="" />
+{% assign image = "defaultvalue-dot-info-lewitt4.jpg" %} {% include srcset-imgix.html %}

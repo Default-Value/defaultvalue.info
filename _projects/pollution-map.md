@@ -1,6 +1,6 @@
 ---
 title: A digital gesture for comprehending a year’s worth of industrial pollution in Louisiana.
-position: 12
+position: 9
 publish: true
 image: /assets/images/defaultvalue-dot-info-pollution2.png
 isBrowser: true

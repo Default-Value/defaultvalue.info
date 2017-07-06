@@ -1,6 +1,6 @@
 ---
 title: A browser extension that utilizes opensourced art collections as a way to passively draw connections.
-position: 9
+position: 7
 publish: true
 image: /assets/images/defaultvalue-dot-info-newtab2.png
 isBrowser: true

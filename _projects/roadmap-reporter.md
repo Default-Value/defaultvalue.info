@@ -1,6 +1,6 @@
 ---
 title: Product design and branding for Reporter, an MVP for Roadmap 2.0.
-position: 13
+position: 10
 publish: true
 image: /assets/images/defaultvalue-dot-info-roadmap6.png
 isBrowser: true
@@ -18,7 +18,7 @@ tags:
     - User Experience
 ---
 
-<img src="/assets/images/defaultvalue-dot-info-roadmap1.png" alt="alt text" class="shadow mb8" />
+{% assign image = "defaultvalue-dot-info-roadmap1.png" %} {% assign shadow = true %} {% include srcset-imgix.html %}
 
 *Roadmap is an enterprise-scale project management tool focused on integrating with existing tools and exception-based management.*
 {: .measure-wide }
@@ -26,7 +26,7 @@ tags:
 We joined the small team during the summers of 2015 and 2016 to help reimagine Roadmap from the ground up, from both a design and technology perspective. After interviewing different types of customers about their project workflow and about how they use Roadmap, we found what worked and didn’t work about the current release of Roadmap. It became clear that a simpler point of view, better user experience, and a more flexible and easily adoptable tool were essential to satisfy and expand the user base. Because all of these improvements required sweeping changes to Roadmap 1.0, we needed a strategy for slowly rolling out Roadmap 2.0. We developed Reporter as an MVP for Roadmap 2.0 in order to begin that transition.
 {: .measure-wide .mb8 }
 
-<img src="/assets/images/defaultvalue-dot-info-roadmap2.png" alt="alt text" class="mb8" />
+{% assign image = "defaultvalue-dot-info-roadmap2.png" %} {% assign shadow = false %} {% include srcset-imgix.html %}
 
 Integrations
 {: .ma0 .ttu .sans-serif .tracked }
@@ -40,7 +40,7 @@ Reports
 A Report is a structured comparison of hours, workdays, or dollars across projects, people, tasks, or roles. This allows a user to analyze past data, measure progress, and forecast the future, which enables faster, better decisions.
 {: .measure-wide .mt1 .mb8 }
 
-<img src="/assets/images/defaultvalue-dot-info-roadmap8.png" alt="alt text" class="shadow mb8" />
+{% assign image = "defaultvalue-dot-info-roadmap8.png" %} {% assign shadow = true %} {% include srcset-imgix.html %}
 
 Base Report
 {: .ma0 .ttu .sans-serif .tracked }
@@ -48,7 +48,7 @@ Base Report
 Base reports are the core unit of Reporter. Their goal is to provide clear and useful information in a flexible way. A base report comes with a primary data set: Planning Efficiency, Utilization, Project Status, Revenue, Collisions, as well as a series of data columns (logged hours, planned hours, etc). A base report has different views: overview, by time, by distribution, can be viewed across different data sets (hours, work-day, budget dollars) and can be navigated across time and time resolution (week, month, …).
 {: .measure-wide .mt1 .mb8 }
 
-<img src="/assets/images/defaultvalue-dot-info-roadmap6.png" alt="alt text" class="shadow mb8" />
+{% assign image = "defaultvalue-dot-info-roadmap6.png" %} {% include srcset-imgix.html %}
 
 Hide peripheral information
 {: .ma0 .ttu .sans-serif .tracked }
@@ -56,7 +56,7 @@ Hide peripheral information
 We designed Reporter with the perspective that targeted information is better than complete information, as long as there is easy navigation to ask for contextually related data. A project expands to see the internal tasks, people, and roles. A row can be expanded to view its contributing factors.
 {: .measure-wide .mt1 .mb8 }
 
-<img src="/assets/images/defaultvalue-dot-info-roadmap7.png" alt="alt text" class="shadow mb8" />
+{% assign image = "defaultvalue-dot-info-roadmap7.png" %} {% include srcset-imgix.html %}
 
 Saved Reports & Filters
 {: .ma0 .ttu .sans-serif .tracked }
@@ -64,11 +64,11 @@ Saved Reports & Filters
 A base report can be saved with a relative timeframe, optional filters, a custom name, and is collapsed into a small card. Rather than spending time organizing a large table view each time you open Roadmap for a particular task - Saved Reports allows a single setup that can be returned to.
 {: .measure-wide .mt1 .mb8 }
 
-<img src="/assets/images/defaultvalue-dot-info-roadmap3.png" alt="alt text" class="shadow mb8" />
+{% assign image = "defaultvalue-dot-info-roadmap3.png" %} {% include srcset-imgix.html %}
 
-<img src="/assets/images/defaultvalue-dot-info-roadmap4.png" alt="alt text" class="shadow mb8" />
+{% assign image = "defaultvalue-dot-info-roadmap4.png" %} {% include srcset-imgix.html %}
 
-<img src="/assets/images/defaultvalue-dot-info-roadmap5.png" alt="alt text" class="shadow mb8" />
+{% assign image = "defaultvalue-dot-info-roadmap5.png" %} {% include srcset-imgix.html %}
 
 Collections
 {: .ma0 .ttu .sans-serif .tracked }
@@ -76,7 +76,7 @@ Collections
 Saved Reports can be sorted into Collections and viewed with a targeted context, such as Weekly Meetings. Using collections gives some amount of context before clickthrough rather than wasting time browsing through data looking for what is relevant.
 {: .measure-wide .mt1 .mb8 }
 
-<img src="/assets/images/defaultvalue-dot-info-roadmap9.png" alt="alt text" class="shadow mb8" />
+{% assign image = "defaultvalue-dot-info-roadmap9.png" %} {% include srcset-imgix.html %}
 
 Dashboard
 {: .ma0 .ttu .sans-serif .tracked }

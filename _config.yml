@@ -43,6 +43,7 @@ srcset:
 - 1920
 imgix:
   source: defaultvalue.imgix.net
+  secure_url_token: nzaCS3EQBKH5zHXd
 
 ##### jekyll #####
 permalink: pretty

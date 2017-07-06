@@ -33,4 +33,73 @@ layout: default
     <div class="markdown lh-3">
         {{ content }}
     </div>
+
+    <div class="relative z-2">
+    {% assign sorted = site.projects | sort:"position" %}
+    {% for project in sorted %}
+      {% if project.publish %}
+      {% if project.position == page.position %}
+
+        <!-- first project -->
+        {% if forloop.first %}
+          <div class="flex justify-between mt8 f5 sans-serif">
+          {% assign prev = sorted.last %}
+            <a class="link dim flex items-center" href="{{ prev.url }}">
+              <span class="brand mr1 dn-sm db-md dn-lg">←</span><span class="link underline2 brand">Previous Project</span>
+              <img class="ml3 w18 w20-md dn db-sm dn-md db-lg {% if prev.isBrowser %}shadow{% endif %}" src="{{ prev.image }}" />
+            </a>
+          {% assign index-next = page.position | plus:1 %}
+          {% assign next = site.projects | where:"position",index-next %}
+          {% for post in next %}
+            <a class="link dim flex items-center" href="{{ post.url }}">
+              <img class="mr3 w18 w20-md dn db-sm dn-md db-lg {% if post.isBrowser %}shadow{% endif %}" src="{{ post.image }}" />
+              <span class="link underline2 brand">Next Project</span><span class="brand ml1 dn-sm db-md dn-lg">→</span>
+            </a>
+          {% endfor %}
+          </div>
+        <!-- last project -->
+        {% elsif forloop.last %}
+          <div class="flex justify-between mt8 f5 sans-serif">
+          {% assign index-previous = page.position | minus:1 %}
+          {% assign prev = site.projects | where:"position",index-previous %}
+          {% for post in prev %}
+            <a class="link dim flex items-center" href="{{ post.url }}">
+              <span class="brand mr1 dn-sm db-md dn-lg">←</span><span class="link underline2 brand">Previous Project</span>
+              <img class="ml3 w18 w20-md dn db-sm dn-md db-lg {% if post.isBrowser %}shadow{% endif %}" src="{{ post.image }}" />
+            </a>
+          {% endfor %}
+          {% assign next = sorted.first %}
+          <a class="link dim flex items-center" href="{{ next.url }}">
+            <img class="mr3 w18 w20-md dn db-sm dn-md db-lg {% if next.isBrowser %}shadow{% endif %}" src="{{ next.image }}" />
+            <span class="link underline2 brand">Next Project</span><span class="brand ml1 dn-sm db-md dn-lg">→</span>
+          </a>
+          </div>
+        <!-- middle projects -->
+        {% else %}
+          <div class="flex justify-between mt8 f5 sans-serif">
+          {% assign index-previous = page.position | minus:1 %}
+          {% assign prev = site.projects | where:"position",index-previous %}
+          {% for post in prev %}
+            <a class="link dim flex items-center" href="{{ post.url }}">
+              <span class="brand mr1 dn-sm db-md dn-lg">←</span><span class="link underline2 brand">Previous Project</span>
+              <img class="ml3 w18 w20-md dn db-sm dn-md db-lg {% if post.isBrowser %}shadow{% endif %}" src="{{ post.image }}" />
+            </a>
+          {% endfor %}
+          {% assign index-next = page.position | plus:1 %}
+          {% assign next = site.projects | where:"position",index-next %}
+          {% for post in next %}
+            <a class="link dim flex items-center" href="{{ post.url }}">
+              <img class="mr3 w18 w20-md dn db-sm dn-md db-lg {% if post.isBrowser %}shadow{% endif %}" src="{{ post.image }}" />
+              <span class="link underline2 brand">Next Project</span><span class="brand ml1 dn-sm db-md dn-lg">→</span>
+            </a>
+          {% endfor %}
+          </div>
+        {% endif %}
+
+      {% endif %}
+      {% endif %}
+    {% endfor %}
+    </div>
+
+
 </div>

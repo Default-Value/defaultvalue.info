@@ -1,5 +1,6 @@
 {% assign quality = 70 %}
 
 <img
+  class="{% if shadow %}shadow{% endif%}"
   src="{{ image | imgix_url: q: 70 }}"
   srcset="{% for width in site.srcset %}{{ image | imgix_url: w: width, q: quality }} {{ width }}w{% if forloop.last == false %}, {% endif %}{% endfor %}">
