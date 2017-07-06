@@ -27,4 +27,4 @@ We created a tool that could act as a container for holding bits, ideas, phrases
 
 {% assign image = "defaultvalue-dot-info-wwwwwwork2.png" %} {% assign shadow = true %} {% include srcset-imgix.html %}
 
-<img src="/assets/images/defaultvalue-dot-info-wwwwwwork3.gif" alt="alt text" class="shadow mb8" />
+<img src="/assets/images/defaultvalue-dot-info-wwwwwwork3.gif" alt="alt text" class="shadow" />

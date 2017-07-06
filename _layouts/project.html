@@ -7,7 +7,7 @@ layout: default
     {% assign number = page.position %}
 {% endif %}
 <div class="ml30-md mt10 container-wide">
-    <div class="flex flex-column flex-row-xl mb8">
+    <div class="flex flex-column flex-row-xl justify-between mb8">
         <div class="mr6-xl">
           <h1 class="f2 f1-sm fw4 lh-2 black link mb0 dim mt0">{% if page.client.name %}<span class="sans-serif smaller">{{ page.client.name }} — </span>{% endif %}{{ page.title }}</h1>
         </div>
@@ -42,7 +42,7 @@ layout: default
 
         <!-- first project -->
         {% if forloop.first %}
-          <div class="flex justify-between mt8 f5 sans-serif">
+          <div class="flex justify-between mt16 f5 sans-serif">
           {% assign prev = sorted.last %}
             <a class="link dim flex items-center" href="{{ prev.url }}">
               <span class="brand mr1 dn-sm db-md dn-lg">←</span><span class="link underline2 brand">Previous Project</span>
@@ -59,7 +59,7 @@ layout: default
           </div>
         <!-- last project -->
         {% elsif forloop.last %}
-          <div class="flex justify-between mt8 f5 sans-serif">
+          <div class="flex justify-between mt16 f5 sans-serif">
           {% assign index-previous = page.position | minus:1 %}
           {% assign prev = site.projects | where:"position",index-previous %}
           {% for post in prev %}
@@ -76,7 +76,7 @@ layout: default
           </div>
         <!-- middle projects -->
         {% else %}
-          <div class="flex justify-between mt8 f5 sans-serif">
+          <div class="flex justify-between mt16 f5 sans-serif">
           {% assign index-previous = page.position | minus:1 %}
           {% assign prev = site.projects | where:"position",index-previous %}
           {% for post in prev %}

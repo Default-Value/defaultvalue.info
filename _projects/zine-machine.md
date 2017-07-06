@@ -12,7 +12,7 @@ tags:
     - Visual Design
 ---
 
-<img src="/assets/images/temp2.png" alt="alt text" class="mb8" />
+{% assign image = "defaultvalue-dot-info-zine6.png" %} {% assign shadow = false %} {% include srcset-imgix.html %}
 
 paragraph
 {: .measure-wide .mb8 }

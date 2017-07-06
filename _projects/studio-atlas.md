@@ -20,7 +20,7 @@ We collected data about studios and their descriptions in to a spreadsheet that 
 The resulting simple React app plots the studios according to their coordinates, creating a field of studio homepages that the user can explore at their own pace. We hope that this encourages a viewer to find relationships between grouped studios in both aesthetic and linguistic terms.
 {: .measure-wide .mb8 }
 
-<video autoplay="autoplay" loop="loop" width="100%" class="shadow mb8">
+<video autoplay="autoplay" loop="loop" width="100%" class="shadow">
   <source src="/assets/images/defaultvalue-dot-info-studioatlas1.mp4" type="video/mp4" />
 </video>
 
