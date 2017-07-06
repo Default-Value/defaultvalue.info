@@ -99,3 +99,29 @@ html{ height: 100%; }
         margin-top: 6rem;
     }
 }
+
+.markdown {
+  a {
+    font-size: .875em;
+    text-decoration: none;
+    border-bottom: 4px double;
+    color: $brand;
+    font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
+    &:hover {
+      color: $brand-high;
+    }
+  }
+
+  h3 {
+    text-transform: uppercase;
+    margin: 0;
+    letter-spacing: .1em;
+    font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
+    font-weight: normal;
+    font-size: 1rem;
+  }
+  img,
+  video {
+    margin-bottom: 4rem;
+  }
+}
