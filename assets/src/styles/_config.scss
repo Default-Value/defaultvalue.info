@@ -1,18 +1,20 @@
 // Border
-$border-width: 2px;
+$border-width: 1px;
 $border-radius: 4px;
 
 // Breakpoints
 $breakpoints: (
   xs: 32em,
   sm: 40em,
-  md: 52em,
-  lg: 64em
+  md: 54em,
+  lg: 64em,
+  xl: 76em
 );
 
+
 // Loop Counts
-$spacing-count: 24; //Generates margin and padding classes 0.5rem increments
-$layout-count: 48; //Generates height/width classes in 0.5rem increments
+$spacing-count: 32; //Generates margin and padding classes 0.5rem increments
+$layout-count: 80; //Generates height/width classes in 0.5rem increments
 
 // Type Scale
 $h1: 2rem;    // 32px
@@ -36,15 +38,17 @@ $measure-4: 50em;
 $white: #FFFFFF;
 $black: #000000;
 $light-grey: #F1F1F1;
-$brand: #009E34;
-$brand-low: #007327;
-$brand-high: #00CA43;
+$dark-grey: #9B9B9B;
+$brand: #009933;
+$brand-low: #007F2A;
+$brand-high: #00B33B;
 
 // Color Palette
 $color-palette: (
   white: $white,
   black: $black,
   light-grey: $light-grey,
+  dark-grey: $dark-grey,
   brand: $brand,
   brand-low: $brand-low,
   brand-high: $brand-high,

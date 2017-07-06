@@ -1,0 +1,30 @@
+---
+title: Home
+layout: default
+image:
+---
+
+<div class="ml30-md mt10 container">
+    <p class="f1 lh-2">A collection of things that don't fit elsewhere.</p>
+
+    <hr class="w10 ml0 mv10">
+
+    <div id="instafeed" class="flex flex-wrap items-center justify-between"></div>
+
+</div>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/instafeed.js/1.4.1/instafeed.min.js"></script>
+<script type="text/javascript">
+  var feed = new Instafeed({
+    get: 'user',
+    userId: '4391959722',
+    links: false,
+    resolution: 'standard_resolution',
+    accessToken: '4391959722.65bcabf.ad178be0a8c74fb089559f84673d4224',
+    filter: function(image) {
+      return true;
+      // return image.tags.indexOf('etc') >= 0;
+    }
+  });
+  feed.run();
+</script>

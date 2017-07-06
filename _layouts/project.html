@@ -1,0 +1,36 @@
+---
+layout: default
+---
+{% if page.position < 10 %}
+    {% assign number = page.position | prepend: '0' %}
+{% else %}
+    {% assign number = page.position %}
+{% endif %}
+<div class="ml30-md mt10 container-wide">
+    <div class="flex flex-column flex-row-xl">
+        <div class="mr6-xl">
+          <h1 class="f2 f1-sm fw4 lh-2 black link mb0 dim mt0">{% if page.client.name %}<span class="sans-serif smaller">{{ page.client.name }} — </span>{% endif %}{{ page.title }}</h1>
+        </div>
+        <div class='mt1 mt0-xl'>
+            <ul class="list f6 fw4 ttu sans-serif tracked pl0 ma0 lh-3 w28-xl">
+                {% for item in page.tags %}
+                  <li class="dib db-xl mt0-xl">{{ item }}<span class="dn-xl">{% if forloop.last == false %}, {% endif %}</span></li>
+                {% endfor %}
+                <div class="mt3 lh-4">
+                  {% if page.client %}
+                    <li>Client: <a href="{{ page.client.url }}" class="link underline2 brand hover-brand-high">{{ page.client.name }}</a></li>
+                  {% endif %}
+                  {% if page.collaborator %}
+                    <li>Collaborator: <a href="{{ page.collaborator.url }}" class="link underline2 brand hover-brand-high">{{ page.collaborator.name }}</a></li>
+                  {% endif %}
+                  {% if page.designer %}
+                    <li>Design: <a href="{{ page.designer.url }}" class="link underline2 brand hover-brand-high">{{ page.designer.name }}</a></li>
+                  {% endif %}
+                </div>
+            </ul>
+        </div>
+    </div>
+    <div class="markdown lh-3">
+        {{ content }}
+    </div>
+</div>

@@ -7,7 +7,7 @@
     {% seo %}
     <link rel="stylesheet" href="/assets/dist/styles/app.css" />
   </head>
-  <body>
+  <body class="bg-light-grey ma0 relative min-h-100 pb30 overflow-x-hidden">
     {% if site.google_analytics %}
       <script type="text/javascript">
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -19,7 +19,11 @@
       </script>
     {% endif %}
 
-    {{ content }}
+    <div class="pl2 pr2 pl6-sm pr6-sm pl10-md pt4 pt10-sm pr10-md">
+      {% include nav.html %}
+      {{ content }}
+    </div>
+    {% include footer.html %}
 
     <script type="text/javascript" src="/assets/dist/scripts/app.js"></script>
   </body>

@@ -26,6 +26,24 @@ timezone: America/New_York
 
 ##### defaults #####
 
+##### collections #####
+collections:
+  projects:
+    title: Projects
+    output: true
+
+##### imgix #####
+srcset:
+- 480
+- 720
+- 960
+- 1200
+- 1440
+- 1680
+- 1920
+imgix:
+  source: defaultvalue.imgix.net
+
 ##### jekyll #####
 permalink: pretty
 exclude:

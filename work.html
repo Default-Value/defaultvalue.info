@@ -3,6 +3,61 @@ title: Home
 layout: default
 image:
 ---
+<div class="ml30-md mt10 container-wide">
 
-<h1 class="red">Default Value</h1>
-<img src="assets/images/placeholder.png" alt="">
+    <div class="flex flex-wrap justify-between">
+        {% assign counter = '0' %}
+        {% assign bigProj = 5 %}
+        {% assign sorted = site.projects | sort:"position" %}
+
+        {% for project in sorted %}
+            {% if project.publish %}
+                {% capture counter %}{{ counter | plus:'1' }}{% endcapture %}
+                {% assign cleanCounter = counter | times: 1 %}
+                {% if cleanCounter <= bigProj %}
+                    <div class="flex flex-column mb14">
+                        <div class="flex flex-column flex-row-xl justify-between items-start">
+                            <a href="{{ project.url }}" class="f2 f1-sm lh-2 black link dim mr6-xl">{% if project.client.name %}<span class="sans-serif smaller">{{ project.client.name }} — </span>{% endif %}{{ project.title }}</a>
+                            <div class="mt1 mt0-xl">
+                                <ul class="list f6 fw4 ttu sans-serif tracked pl0 ma0 lh-3 w28-xl flex-none">
+                                  {% for item in project.tags %}
+                                      <li class="dn dib-md db-xl mt0-xl">{{ item }}<span class="dn-xl">{% if forloop.last == false %}, {% endif %}</span></li>
+                                  {% endfor %}
+                                  {% if project.collaborator %}
+                                      <li class="mt2">Collaborator: <a href="{{ project.collaborator.url }}" class="link underline2 brand hover-brand-high">{{ project.collaborator.name }}</a></li>
+                                  {% endif %}
+                                  {% if project.designer %}
+                                      <li class="mt2">Design: <a href="{{ project.designer.url }}" class="link underline2 brand hover-brand-high">{{ project.designer.name }}</a></li>
+                                  {% endif %}
+                              </ul>
+                            </div>
+                        </div>
+                        <a href="{{ project.url }}">
+                          <img src="{{ project.image }}" class="dim w-100 mt4 {% if project.isBrowser %}shadow{% endif %}" />
+                        </a>
+                    </div>
+                {% else %}
+                    <div class="flex flex-column flex-row-sm bb-sm pv3-sm mb14 mb0-sm items-center w-100">
+                        <img class="order-last order-0-sm mr6-sm mr0-xl w20-sm mt4 mt0-sm {% if project.isBrowser %}shadow{% endif %}" src="{{ project.image }}" />
+                        <div class="flex flex-column flex-row-xl items-center w-100">
+                          <a href="{{ project.url }}" class="f2 mb2 mb0-xl f3-sm lh-2 black link w-100 mh6-xl dim">{% if project.client.name %}<span class="sans-serif smaller">{{ project.client.name }} — </span>{% endif %}{{ project.title }}</a>
+                          <div>
+                              <ul class="list f6 fw4 ttu sans-serif tracked pl0 ma0 lh-3 w28-xl">
+                                  {% for item in project.tags %}
+                                      <li class="dn dib-md db-xl mt0-xl">{{ item }}<span class="dn-xl">{% if forloop.last == false %}, {% endif %}</span></li>
+                                  {% endfor %}
+                                  {% if project.collaborator %}
+                                     <li class="mt2">Collaborator: <a href="{{ project.collaborator.url }}" class="link underline2 brand hover-brand-high">{{ project.collaborator.name }}</a>  </li>
+                                  {% endif %}
+                                  {% if project.designer %}
+                                    <li class="mt2">Design: <a href="{{ project.designer.url }}" class="link underline2 brand hover-brand-high">{{ project.designer.name }}</a>  </li>
+                                  {% endif %}
+                              </ul>
+                          </div>
+                        </div>
+                    </div>
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>

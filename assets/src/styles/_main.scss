@@ -1,0 +1,101 @@
+html{ height: 100%; }
+
+.container { max-width: 45rem; }
+.container-wide { max-width: 60rem; }
+
+.bullet:before {
+    content: "—";
+    padding-right: .5rem;
+}
+
+.smaller { font-size: 0.9em; }
+.underline2 { border-bottom: 4px double; }
+.hangingindent {
+  padding-left: 1em ;
+  text-indent: -1em ;
+}
+.gradient { background-image: linear-gradient(-180deg, rgba(255,255,255,0.00) 0%, #FFFFFF 100%); }
+.shadow { box-shadow: 0px 0px 16px rgba(0,0,0,.33); }
+
+.top-50 { top: 50%; }
+.left-50 { left: 50%; }
+.transform-center { transform: translate(-50%, -50%); }
+
+.mw-initial { max-width: initial; }
+
+#instafeed {
+  img {
+    width: 46%;
+    height: 100%;
+    margin-bottom: 3rem;
+    transform: rotate(1.75deg);
+    &:nth-child(2n) { transform: none; }
+    &:nth-child(3n) { transform: rotate(-1.5deg); }
+    &:nth-child(5n) { transform: scale(1.1); }
+    &:nth-child(2n) { width: 40%; }
+    &:nth-child(3n) { width: 20rem; }
+    &:nth-child(5n) { width: 10rem; }
+  }
+}
+
+
+.circle1 {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.circle2 {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+
+.circle3 {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+@media (min-width: map-get($breakpoints, sm)) {
+    .circle1 {
+        background-image: url('/assets/images/circle1.svg');
+        padding-left: 9rem;
+        padding-right: 9rem;
+        margin-left: -9rem;
+        margin-right: -9rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    .circle2 {
+        background-image: url('/assets/images/circle2.svg');
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        padding-left: 9rem;
+        padding-right: 9rem;
+        margin-top: -12rem;
+        margin-left: -9rem;
+        margin-right: -9rem;
+    }
+    .circle3 {
+        background-image: url('/assets/images/circle3.svg');
+        padding-left: 8rem;
+        padding-right: 12rem;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        margin-top: -8rem;
+    }
+}
+
+@media (min-width: map-get($breakpoints, md)) {
+    .circle2 {
+        margin-top: -6rem;
+    }
+    .circle3 {
+        margin-top: -8rem;
+    }
+}
+
+@media (min-width: map-get($breakpoints, lg)) {
+    .circle2 {
+        margin-top: 6rem;
+    }
+}

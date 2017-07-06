@@ -24,9 +24,9 @@
 .mw-100 { max-width: 100%; }
 
 @for $i from 1 through $layout-count {
-  .w#{$i} { height: #{$i * .5}rem; }
-  .max-w#{$i} { max-height: #{$i * .5}rem; }
-  .min-w#{$i} { min-height: #{$i * .5}rem; }
+  .w#{$i} { width: #{$i * .5}rem; }
+  .max-w#{$i} { max-width: #{$i * .5}rem; }
+  .min-w#{$i} { min-width: #{$i * .5}rem; }
 }
 
 @if (variable-exists(breakpoints)) {
@@ -51,9 +51,9 @@
       .w-auto-#{$bp-name} { width: auto; }
       .mw-100-#{$bp-name} { max-width: 100%; }
       @for $i from 1 through $layout-count {
-        .w#{$i}-#{$bp-name} { height: #{$i * .5}rem; }
-        .max-w#{$i}-#{$bp-name} { max-height: #{$i * .5}rem; }
-        .min-w#{$i}-#{$bp-name} { min-height: #{$i * .5}rem; }
+        .w#{$i}-#{$bp-name} { width: #{$i * .5}rem; }
+        .max-w#{$i}-#{$bp-name} { max-width: #{$i * .5}rem; }
+        .min-w#{$i}-#{$bp-name} { min-width: #{$i * .5}rem; }
       }
 
 
