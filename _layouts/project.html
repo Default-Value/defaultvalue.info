@@ -46,13 +46,13 @@ layout: default
           {% assign prev = sorted.last %}
             <a class="link dim flex items-center" href="{{ prev.url }}">
               <span class="brand mr1 dn-sm db-md dn-lg">←</span><span class="link underline2 brand">Previous Project</span>
-              <img class="ml3 w18 w20-md dn db-sm dn-md db-lg {% if prev.isBrowser %}shadow{% endif %}" src="{{ prev.image }}" />
+              <img class="ml3 w18 w20-md dn db-sm dn-md db-lg {% if prev.isBrowser %}shadow{% endif %}" src="{{ prev.image  | replace: '/assets/images/', '' | imgix_url: q: 70 }}" srcset="{{ prev.image  | replace: '/assets/images/', '' | imgix_url: w: 320, q: 70 }} 320w, {{ prev.image  | replace: '/assets/images/', '' | imgix_url: w: 288, q: 70 }} 288w, {{ prev.image  | replace: '/assets/images/', '' | imgix_url: w: 160, q: 70 }} 160w, {{ prev.image  | replace: '/assets/images/', '' | imgix_url: w: 144, q: 70 }} 144w"  />
             </a>
           {% assign index-next = page.position | plus:1 %}
           {% assign next = site.projects | where:"position",index-next %}
           {% for post in next %}
             <a class="link dim flex items-center" href="{{ post.url }}">
-              <img class="mr3 w18 w20-md dn db-sm dn-md db-lg {% if post.isBrowser %}shadow{% endif %}" src="{{ post.image }}" />
+              <img class="mr3 w18 w20-md dn db-sm dn-md db-lg {% if post.isBrowser %}shadow{% endif %}" src="{{ post.image  | replace: '/assets/images/', '' | imgix_url: q: 70 }}" srcset="{{ post.image  | replace: '/assets/images/', '' | imgix_url: w: 320, q: 70 }} 320w, {{ post.image  | replace: '/assets/images/', '' | imgix_url: w: 288, q: 70 }} 288w, {{ post.image  | replace: '/assets/images/', '' | imgix_url: w: 160, q: 70 }} 160w, {{ post.image  | replace: '/assets/images/', '' | imgix_url: w: 144, q: 70 }} 144w"  />
               <span class="link underline2 brand">Next Project</span><span class="brand ml1 dn-sm db-md dn-lg">→</span>
             </a>
           {% endfor %}
@@ -65,12 +65,12 @@ layout: default
           {% for post in prev %}
             <a class="link dim flex items-center" href="{{ post.url }}">
               <span class="brand mr1 dn-sm db-md dn-lg">←</span><span class="link underline2 brand">Previous Project</span>
-              <img class="ml3 w18 w20-md dn db-sm dn-md db-lg {% if post.isBrowser %}shadow{% endif %}" src="{{ post.image }}" />
+              <img class="ml3 w18 w20-md dn db-sm dn-md db-lg {% if post.isBrowser %}shadow{% endif %}" src="{{ post.image  | replace: '/assets/images/', '' | imgix_url: q: 70 }}" srcset="{{ post.image  | replace: '/assets/images/', '' | imgix_url: w: 320, q: 70 }} 320w, {{ post.image  | replace: '/assets/images/', '' | imgix_url: w: 288, q: 70 }} 288w, {{ post.image  | replace: '/assets/images/', '' | imgix_url: w: 160, q: 70 }} 160w, {{ post.image  | replace: '/assets/images/', '' | imgix_url: w: 144, q: 70 }} 144w"  />
             </a>
           {% endfor %}
           {% assign next = sorted.first %}
           <a class="link dim flex items-center" href="{{ next.url }}">
-            <img class="mr3 w18 w20-md dn db-sm dn-md db-lg {% if next.isBrowser %}shadow{% endif %}" src="{{ next.image }}" />
+            <img class="mr3 w18 w20-md dn db-sm dn-md db-lg {% if next.isBrowser %}shadow{% endif %}" src="{{ next.image  | replace: '/assets/images/', '' | imgix_url: q: 70 }}" srcset="{{ next.image  | replace: '/assets/images/', '' | imgix_url: w: 320, q: 70 }} 320w, {{ next.image  | replace: '/assets/images/', '' | imgix_url: w: 288, q: 70 }} 288w, {{ next.image  | replace: '/assets/images/', '' | imgix_url: w: 160, q: 70 }} 160w, {{ next.image  | replace: '/assets/images/', '' | imgix_url: w: 144, q: 70 }} 144w"  />
             <span class="link underline2 brand">Next Project</span><span class="brand ml1 dn-sm db-md dn-lg">→</span>
           </a>
           </div>
@@ -82,14 +82,14 @@ layout: default
           {% for post in prev %}
             <a class="link dim flex items-center" href="{{ post.url }}">
               <span class="brand mr1 dn-sm db-md dn-lg">←</span><span class="link underline2 brand">Previous Project</span>
-              <img class="ml3 w18 w20-md dn db-sm dn-md db-lg {% if post.isBrowser %}shadow{% endif %}" src="{{ post.image }}" />
+              <img class="ml3 w18 w20-md dn db-sm dn-md db-lg {% if post.isBrowser %}shadow{% endif %}" src="{{ post.image  | replace: '/assets/images/', '' | imgix_url: q: 70 }}" srcset="{{ post.image  | replace: '/assets/images/', '' | imgix_url: w: 320, q: 70 }} 320w, {{ post.image  | replace: '/assets/images/', '' | imgix_url: w: 288, q: 70 }} 288w, {{ post.image  | replace: '/assets/images/', '' | imgix_url: w: 160, q: 70 }} 160w, {{ post.image  | replace: '/assets/images/', '' | imgix_url: w: 144, q: 70 }} 144w"  />
             </a>
           {% endfor %}
           {% assign index-next = page.position | plus:1 %}
           {% assign next = site.projects | where:"position",index-next %}
           {% for post in next %}
             <a class="link dim flex items-center" href="{{ post.url }}">
-              <img class="mr3 w18 w20-md dn db-sm dn-md db-lg {% if post.isBrowser %}shadow{% endif %}" src="{{ post.image }}" />
+              <img class="mr3 w18 w20-md dn db-sm dn-md db-lg {% if post.isBrowser %}shadow{% endif %}" src="{{ post.image  | replace: '/assets/images/', '' | imgix_url: q: 70 }}" srcset="{{ post.image  | replace: '/assets/images/', '' | imgix_url: w: 320, q: 70 }} 320w, {{ post.image  | replace: '/assets/images/', '' | imgix_url: w: 288, q: 70 }} 288w, {{ post.image  | replace: '/assets/images/', '' | imgix_url: w: 160, q: 70 }} 160w, {{ post.image  | replace: '/assets/images/', '' | imgix_url: w: 144, q: 70 }} 144w"  />
               <span class="link underline2 brand">Next Project</span><span class="brand ml1 dn-sm db-md dn-lg">→</span>
             </a>
           {% endfor %}

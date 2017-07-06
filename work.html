@@ -33,13 +33,27 @@ image:
                             </div>
                         </div>
                         <a href="{{ project.url }}">
-                          <img src="{{ project.image }}" class="dim w-100 mt4 {% if project.isBrowser %}shadow{% endif %}" />
+                          <div class="dim w-100 mt4">
+                            {% if project.isBrowser %}
+                              {% assign boolean = true %}
+                            {% else %}
+                              {% assign boolean = false %}
+                            {% endif %}
+                            {% assign image = project.image | replace: '/assets/images/', ''%} {% assign shadow = boolean %} {% include srcset-imgix.html %}
+                          </div>
                         </a>
                     </div>
                 {% else %}
                     <div class="flex flex-column flex-row-sm bb-sm pv3-sm mb14 mb0-sm items-center w-100">
-                        <img class="order-last order-0-sm mr6-sm mr0-xl w20-sm mt4 mt0-sm {% if project.isBrowser %}shadow{% endif %}" src="{{ project.image }}" />
-                        <div class="flex flex-column flex-row-xl items-center w-100">
+                        <a class="dim order-last order-0-sm mr6-sm mr0-xl w20-sm mt4 mt0-sm" href="{{ project.url }}">
+                            {% if project.isBrowser %}
+                              {% assign boolean = true %}
+                            {% else %}
+                              {% assign boolean = false %}
+                            {% endif %}
+                            {% assign image = project.image | replace: '/assets/images/', ''%} {% assign shadow = boolean %} {% include srcset-imgix.html %}
+                        </a>
+                        <div class="flex flex-column flex-row-xl items-center-xl w-100">
                           <a href="{{ project.url }}" class="f2 mb2 mb0-xl f3-sm lh-2 black link w-100 mh6-xl dim">{% if project.client.name %}<span class="sans-serif smaller">{{ project.client.name }} — </span>{% endif %}{{ project.title }}</a>
                           <div>
                               <ul class="list f6 fw4 ttu sans-serif tracked pl0 ma0 lh-3 w28-xl">

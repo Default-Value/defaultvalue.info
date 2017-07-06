@@ -34,6 +34,8 @@ collections:
 
 ##### imgix #####
 srcset:
+- 160
+- 320
 - 480
 - 720
 - 960
