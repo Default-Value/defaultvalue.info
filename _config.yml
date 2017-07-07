@@ -14,12 +14,12 @@ social:
     - https://www.linkedin.com/company-beta/11151394/
     - https://github.com/default-value
 webmaster_verifications:
-  google: 1234
+  google: _AgxPSSFshrNSNpNm0fLrZDaCVUGgJhElENcNIRNYX4
   bing: 1234
   alexa: 1234
 
 ##### etc #####
-ga_analytics: UA-96203809-1
+ga_analytics: UA-102147967-1
 imgix:
   source: imgix.net
 timezone: America/New_York
