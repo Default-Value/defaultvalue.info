@@ -1,5 +1,5 @@
 ---
-title: Home
+title: Work
 layout: default
 image:
 ---
@@ -39,7 +39,7 @@ image:
                             {% else %}
                               {% assign boolean = false %}
                             {% endif %}
-                            {% assign image = project.image | replace: '/assets/images/', ''%} {% assign shadow = boolean %} {% include srcset-imgix.html %}
+                            {% assign image = project.image | replace: '/assets/images/', '' %} {% assign shadow = boolean %} {% include srcset-imgix.html %}
                           </div>
                         </a>
                     </div>
@@ -51,7 +51,7 @@ image:
                             {% else %}
                               {% assign boolean = false %}
                             {% endif %}
-                            {% assign image = project.image | replace: '/assets/images/', ''%} {% assign shadow = boolean %} {% include srcset-imgix.html %}
+                            {% assign image = project.image | replace: '/assets/images/', '' %} {% assign shadow = boolean %} {% include srcset-imgix.html %}
                         </a>
                         <div class="flex flex-column flex-row-xl items-center-xl w-100">
                           <a href="{{ project.url }}" class="f2 mb2 mb0-xl f3-sm lh-2 black link w-100 mh6-xl dim">{% if project.client.name %}<span class="sans-serif smaller">{{ project.client.name }} — </span>{% endif %}{{ project.title }}</a>
