@@ -6,10 +6,10 @@ image: /assets/images/defaultvalue-dot-info-alizee1.png
 layout: project
 isBrowser: true
 client:
-    name: Alizee Freudenthal
+    name: Alizée Freudenthal
     url: http://alizeefreudenthal.com/
 designer:
-    name: Alizee Freudenthal
+    name: Alizée Freudenthal
     url: http://alizeefreudenthal.com/
 tags:
     - Design Consulting
@@ -19,7 +19,7 @@ tags:
 
 {% assign image = "defaultvalue-dot-info-alizee1.png" %} {% assign shadow = true %} {% include srcset-imgix.html %}
 
-Alizee Freudenthal was looking to refresh her website as she transitioned to freelancing full time. We helped Alizee transform flat designs into a responsive and dynamic portfolio site with smart transitions. Siteleaf is used as a content management system to allow painless updating.
+[Alizée Freudenthal](http://alizeefreudenthal.com/) was looking to refresh her website as she transitioned to freelancing full time. We helped Alizée transform flat designs into a responsive and dynamic portfolio site with smart transitions. Siteleaf is used as a content management system to allow painless updating.
 {: .measure-wide .mb8 }
 
 <video autoplay="autoplay" loop="loop" width="100%" class="shadow mb8">

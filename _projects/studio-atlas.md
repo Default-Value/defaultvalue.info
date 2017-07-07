@@ -14,6 +14,9 @@ tags:
 
 {% assign image = "defaultvalue-dot-info-studioatlas3.png" %} {% assign shadow = true %} {% include srcset-imgix.html %}
 
+*[Studio Atlas](http://trevorcarr.info/deploy-studio-atlas/) is an experiment in non-intuitive organization.*
+{: .measure-wide }
+
 We collected data about studios and their descriptions in to a spreadsheet that could be accessed by API through Sheetlabs. That data is piped into a python script that uses [tf-idf](https://en.wikipedia.org/wiki/Tf%E2%80%93idf) and [t-SNE](https://en.wikipedia.org/wiki/Tf%E2%80%93idf) algorithms to sort the studios. Studios that use similar words or write in a similar way are grouped together.
 {: .measure-wide }
 

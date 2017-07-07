@@ -14,6 +14,9 @@ tags:
 
 {% assign image = "defaultvalue-dot-info-wwwwwwork1.png" %} {% assign shadow = true %} {% include srcset-imgix.html %}
 
+*[wwwwww.work](http://wwwwww.work/) is a declarative tool for generating creative ideas by embracing automation.*
+{: .measure-wide }
+
 Often, original or creative ideas are just simple connections between unrelated things. We were interested in how to use the affordances of computers for creative purposes. Maybe machines are better at suggesting connections than humans are.
 {: .measure-wide }
 

@@ -9,7 +9,7 @@ client:
     name: Miranda Brooks
     url: http://mirandabrooks.com/
 designer:
-    name: Alizee Freudenthal
+    name: Alizée Freudenthal
     url: http://alizeefreudenthal.com/
 tags:
     - Design Consulting
@@ -21,7 +21,7 @@ tags:
   <source src="/assets/images/defaultvalue-dot-info-mbrooks1.mp4" type="video/mp4" />
 </video>
 
-Miranda Brooks is a landscape architecture who needed an effortlessly simple-to-update website to showcase her work. With design by Alizee Freudenthal, we developed the website that puts images of her gardens front and center. Siteleaf is used as a content management system to allow the slideshows to be updated season to season.
+[Miranda Brooks](http://mirandabrooks.com/) is a landscape architect who needed an effortlessly simple-to-update website to showcase her work. With design by [Alizée Freudenthal](http://alizeefreudenthal.com/), we developed the website that puts images of her gardens front and center. Siteleaf is used as a content management system to allow the slideshows to be updated season to season.
 {: .measure-wide .mb8 }
 
 {% assign image = "defaultvalue-dot-info-mbrooks2.png" %} {% assign shadow = true %} {% include srcset-imgix.html %}

@@ -13,5 +13,11 @@ tags:
 
 <img src="/assets/images/defaultvalue-dot-info-newtab1.gif" alt="alt text" class="shadow" />
 
-It is argued that physical art is best viewed in person; that digital reproductions lack the affordances necessary to experiencing the work as the artist intended. We wanted to explore the unique affordances of art reproduced on screens. Works can be viewed in context of one another even if they belong in different physical locations. By creating a browser extension ___ passively over time ___ happenstance.
+*Available for download soon.*
+{: .measure-wide }
+
+It is argued that physical art is best viewed in person; that digital reproductions lack the ability to be experienced as the artist intended. However, we’re interested in the unique affordances of art reproduced on screens. Most notably, artworks can be viewed in context of one another even if they are in different physical locations. Unless they are installed in the same gallery, reproductions are the only way to view the relationship between works of art.
+{: .measure-wide }
+
+By creating a browser extension that places two random works of art side-by-side, the viewer is given the opportunity to consider the relationship between them and make formal and conceptual comparisons they might not otherwise consider. This also allows for the passive consumption of art over time and integrates art criticism into the user’s daily routine.
 {: .measure-wide }
