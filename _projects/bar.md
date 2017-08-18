@@ -1,16 +1,15 @@
 ---
-title: A publication for MICA’s Architectural Design program that remains flexible and sustainable over time.
-position: 11
+title: An anthology of words and  images by students at Dew More Baltimore and Maryland Institute College of Art.
+position: 1
 publish: true
-image: /assets/images/defaultvalue-dot-info-micaad3.jpg
+image: /assets/images/defaultvalue-dot-info-bar1.jpg
 isBrowser: false
 layout: project
 client:
-    name: MICA AD
+    name: MICA
     url:
 tags:
-    - Content Planning
-    - Copywriting
+    - Branding
     - Production
     - Publication Design
 ---
