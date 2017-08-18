@@ -1,6 +1,6 @@
 ---
 title: An exhibition engaging with the relationship between systems, context, and the design process.
-position: 3
+position: 2
 publish: true
 image: /assets/images/defaultvalue-dot-info-workingtitle4.jpg
 isBrowser: false

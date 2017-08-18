@@ -1,6 +1,6 @@
 ---
 title: An index of graphic design studios and how they describe themselves.
-position: 2
+position: 10
 publish: true
 image: /assets/images/defaultvalue-dot-info-studioatlas3.png
 isBrowser: true

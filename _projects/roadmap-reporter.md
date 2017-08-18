@@ -1,6 +1,6 @@
 ---
 title: Product design and branding for Reporter, an MVP for Roadmap 2.0.
-position: 10
+position: 3
 publish: true
 image: /assets/images/defaultvalue-dot-info-roadmap6.png
 isBrowser: true
