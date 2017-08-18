@@ -3,7 +3,7 @@ title: An interactive tool for pregnant people to plan the terms of their labor 
 position: 1
 publish: true
 image: /assets/images/defaultvalue-dot-info-almathumb.png
-isBrowser: false
+isBrowser: true
 layout: project
 client:
     name: Alma
